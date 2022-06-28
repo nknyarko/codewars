@@ -1,0 +1,13 @@
+from collections import Counter //importing the count method from collections
+
+// create a function
+def duplicate_encode(word):
+    word=word.lower()  //convert all to lower case
+    result="" // set an variable called result to empty
+    
+    for char in word:       // iterate throgh every letter in the text
+        if word.count(char)==1:  // the count method counts the characters in 'word' , the method takes each character as a parameter
+            result +="("         // if the above it true , set your result to the desired value
+        else:
+            result+=")"
+    return result
