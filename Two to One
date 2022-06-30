@@ -1,0 +1,8 @@
+def longest(a1, a2):
+    a3=sorted(set(a1+a2))
+    char_seen = ""
+    for char in a3:
+        if char not in char_seen:
+            char_seen+=char
+    return char_seen
+        
