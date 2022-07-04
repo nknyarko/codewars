@@ -1,0 +1,10 @@
+def duplicate_count(text):
+#     text=str(text)
+    text=text.lower()
+    unique=[]
+    for char in text:
+        if text.count(char)>1:
+            unique.append(char)
+        else:
+            return len(unique)
+    return len(unique)
