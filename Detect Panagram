@@ -1,0 +1,7 @@
+import string
+alphabet="abcdefghijklmnopqrstuvwxyz"
+def is_pangram(s):
+    for i in s:
+        if i in alphabet:
+            return True
+    return False
