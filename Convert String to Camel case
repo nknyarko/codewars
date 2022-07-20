@@ -1,0 +1,4 @@
+def to_camel_case(text):
+    output = ''.join(x for x in text.title() if x not in "_-")
+    return text[0] + output[1:] if text else ''
+    
